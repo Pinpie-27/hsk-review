@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { levels } from '@/data';
+import { InstallPrompt } from '@/components/InstallPrompt';
 
 const upcoming = [
   { slug: 'hsk1', name: 'HSK 1', han: '一' },
@@ -41,6 +42,7 @@ export default function Home() {
         <p className="mt-5 max-w-lg text-ink2 leading-relaxed">
           Review Chinese vocabulary and example sentences day by day. Open it on your phone anywhere — like flipping through a small notebook.
         </p>
+        <InstallPrompt />
       </header>
 
       <div className="rule mt-14" />
