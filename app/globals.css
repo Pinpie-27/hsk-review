@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@400;500;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --paper: #f6f1e6;
+  --paper-2: #efe7d4;
+  --ink: #14181f;
+  --ink-2: #3b4048;
+  --muted: #877e6f;
+  --rule: #e2d7bf;
+  --card: #ffffff;
+  --accent: #b21414;
+  --accent-2: #7a0f0f;
+  --amber: #b45309;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background: var(--paper);
+  background-image:
+    radial-gradient(1200px 700px at 12% -12%, rgba(178, 20, 20, 0.05), transparent 60%),
+    radial-gradient(900px 500px at 100% 0%, rgba(180, 83, 9, 0.05), transparent 55%);
+  color: var(--ink);
+  font-family: 'Inter', system-ui, sans-serif;
+  font-feature-settings: 'ss01', 'cv11', 'cv02';
+  -webkit-font-smoothing: antialiased;
+  min-height: 100dvh;
+}
+
+.font-serif-latin {
+  font-family: 'Fraunces', 'Iowan Old Style', 'Georgia', serif;
+  font-optical-sizing: auto;
+}
+
+.han {
+  font-family: 'Noto Sans SC', 'PingFang SC', 'Hiragino Sans GB', system-ui, sans-serif;
+}
+
+.han-serif {
+  font-family: 'Noto Serif SC', 'Songti SC', 'STSong', serif;
+}
+
+.rule {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--rule) 20%, var(--rule) 80%, transparent);
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid #ece3ce;
+  border-radius: 22px;
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.6) inset,
+    0 1px 2px rgba(20, 24, 32, 0.03),
+    0 12px 40px -12px rgba(20, 24, 32, 0.08);
+}
+
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* seal-style tag */
+.seal {
+  background: var(--accent);
+  color: #fff;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 6px;
+  font-family: 'Noto Serif SC', serif;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
