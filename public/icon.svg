@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="96" ry="96" fill="#b21414"/>
+  <text x="256" y="266"
+        font-family="'Noto Serif SC','Songti SC','STSong','PingFang SC',serif"
+        font-size="340" font-weight="900"
+        fill="#f6f1e6"
+        text-anchor="middle"
+        dominant-baseline="central">汉</text>
+</svg>
